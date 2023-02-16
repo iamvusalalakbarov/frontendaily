@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search-Filter Components</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <main>
+      <div class="component component-1">
+        <label>
+          <svg
+            width="28"
+            height="28"
+            viewBox="0 0 28 28"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g opacity="0.5">
+              <circle
+                cx="11.6667"
+                cy="11.6667"
+                r="8.16667"
+                stroke="white"
+                stroke-width="1.75"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M24.5 24.5L17.5 17.5"
+                stroke="white"
+                stroke-width="1.75"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </g>
+          </svg>
+          <input type="search" placeholder="Start typing to search" />
+        </label>
+
+        <div class="popular-searches">
+          <h3>Popular Searches</h3>
+          <ul>
+            <li>
+              <a href="#">Air Transport</a>
+            </li>
+            <li>
+              <a href="#">Aviation</a>
+            </li>
+            <li>
+              <a href="#">Mekaniske Verksted</a>
+            </li>
+            <li>
+              <a href="#">Port Authority</a>
+            </li>
+            <li>
+              <a href="#">Sporvei</a>
+            </li>
+            <li>
+              <a href="#">Bergens Kreditbank</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="component component-2">
+        <label class="search-label">
+          <svg
+            width="28"
+            height="28"
+            viewBox="0 0 28 28"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g opacity="0.5">
+              <circle
+                cx="11.6667"
+                cy="11.6667"
+                r="8.16667"
+                stroke="white"
+                stroke-width="1.75"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M24.5 24.5L17.5 17.5"
+                stroke="white"
+                stroke-width="1.75"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </g>
+          </svg>
+          <input type="search" placeholder="Start typing to search" />
+        </label>
+
+        <div class="search-filters">
+          <label>
+            <input type="radio" name="filter" value="projects" checked />
+            <span>Projects</span>
+          </label>
+          <label>
+            <input type="radio" name="filter" value="images" />
+            <span>Images</span>
+          </label>
+          <label>
+            <input type="radio" name="filter" value="people" />
+            <span>People</span>
+          </label>
+        </div>
+      </div>
+
+      <div class="component component-3">
+        <form>
+          <label>
+            <span>Country</span>
+            <select name="country">
+              <option value="norway">Norway</option>
+              <option value="sweden">Sweden</option>
+              <option value="finland">Finland</option>
+              <option value="denmark">Denmark</option>
+            </select>
+          </label>
+
+          <label>
+            <span>City</span>
+            <input type="text" value="Bergen" />
+          </label>
+        </form>
+
+        <div class="buttons">
+          <a href="#" class="cancel-btn">Cancel</a>
+          <button class="submit-btn">Apply Filters</button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
