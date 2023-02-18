@@ -20,14 +20,20 @@ body {
 
 body {
   background-color: #f5f6f8;
+  position: relative;
 }
 body header {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
   height: 56px;
   padding: 0 150px;
   background-color: #fff;
+  margin-bottom: 16px;
+  position: sticky;
+  top: 0;
+  z-index: 2;
 }
 body header .logo-and-search {
   display: flex;
@@ -60,41 +66,35 @@ body header .logo-and-search label input::placeholder {
   color: #aaaaaa;
   font-size: 14px;
 }
-body header .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-}
-body header .container nav ul {
+body header nav ul {
   display: flex;
   align-items: center;
   gap: 32px;
 }
-body header .container nav ul li div {
+body header nav ul li div {
   width: 24px;
   height: 24px;
   position: relative;
 }
-body header .container nav ul li a {
+body header nav ul li a {
   display: flex;
   align-items: center;
   position: relative;
 }
-body header .container nav ul li a span {
+body header nav ul li a span {
   display: none;
   font-size: 14px;
   font-weight: 500;
   margin: 2px 2px 0 6px;
 }
-body header .container nav ul li.active svg path {
+body header nav ul li.active svg path {
   stroke: #006699;
 }
-body header .container nav ul li.active span {
+body header nav ul li.active span {
   display: inline-block;
   color: #006699;
 }
-body header .container nav ul li.notifications div::before {
+body header nav ul li.notifications div::before {
   content: "";
   position: absolute;
   top: 0;
@@ -103,30 +103,348 @@ body header .container nav ul li.notifications div::before {
   height: 8px;
   border: 2px solid #fff;
   border-radius: 50%;
-  background-color: #FC8338;
+  background-color: #fc8338;
 }
-body header .container .user-log {
+body header .user-log {
   display: flex;
   align-items: center;
 }
-body header .container .user-log .user-info {
+body header .user-log .user-info {
   display: flex;
   flex-direction: column;
   margin-right: 6px;
 }
-body header .container .user-log .user-info p.name {
+body header .user-log .user-info p.name {
   font-size: 12px;
   color: #17272f;
 }
-body header .container .user-log .user-info span {
+body header .user-log .user-info span {
   font-size: 10px;
   color: #31b057;
   margin-left: auto;
 }
-body header .container .user-log .user-photo img {
+body header .user-log .user-photo img {
   height: 24px;
 }
-body header .container .user-log .dropdown {
+body header .user-log .dropdown {
   margin-left: 4px;
   cursor: pointer;
+}
+body main {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 150px;
+}
+body main aside > div {
+  width: 270px;
+  border-radius: 6px;
+  background-color: #fff;
+}
+body main aside > div:not(:last-child) {
+  margin-bottom: 16px;
+}
+body main aside .profile-info {
+  padding: 8px;
+  padding-bottom: 20px;
+}
+body main aside .profile-info .profile .images {
+  position: relative;
+  margin-bottom: 36px;
+}
+body main aside .profile-info .profile .images .avatar {
+  height: 56px;
+  position: absolute;
+  top: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 4px solid #fff;
+  border-radius: 50%;
+}
+body main aside .profile-info .profile .personal-info {
+  text-align: center;
+  margin-bottom: 16px;
+}
+body main aside .profile-info .profile .personal-info p.name {
+  font-weight: 500;
+  color: #17272f;
+  margin-bottom: 4px;
+}
+body main aside .profile-info .profile .personal-info .job-title {
+  display: block;
+  font-size: 14px;
+  color: #aaaaaa;
+}
+body main aside .profile-info .statistics {
+  margin: 0 8px;
+  padding-top: 16px;
+  border-top: 1px solid #edf0f5;
+}
+body main aside .profile-info .statistics ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body main aside .profile-info .statistics ul li:not(:last-child) {
+  margin-bottom: 16px;
+}
+body main aside .profile-info .statistics ul li p {
+  font-size: 14px;
+  color: #17272f;
+}
+body main aside .profile-info .statistics ul li span {
+  font-size: 14px;
+  font-weight: 500;
+  color: #006699;
+}
+body main aside .newests-and-groups {
+  padding: 16px;
+}
+body main aside .newests-and-groups > div:not(:last-child) {
+  margin-bottom: 36px;
+}
+body main aside .newests-and-groups .newests .container,
+body main aside .newests-and-groups .groups .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #edf0f5;
+  margin-bottom: 12px;
+}
+body main aside .newests-and-groups .newests .container h3,
+body main aside .newests-and-groups .groups .container h3 {
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #17272f;
+}
+body main aside .newests-and-groups .newests .container .status,
+body main aside .newests-and-groups .groups .container .status {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+body main aside .newests-and-groups .newests .container .status span,
+body main aside .newests-and-groups .groups .container .status span {
+  font-size: 14px;
+  color: #31b057;
+  margin-right: 4px;
+}
+body main aside .newests-and-groups .newests .container .status img,
+body main aside .newests-and-groups .groups .container .status img {
+  height: 12px;
+}
+body main aside .newests-and-groups .newests ul li:not(:last-child),
+body main aside .newests-and-groups .groups ul li:not(:last-child) {
+  margin-bottom: 8px;
+}
+body main aside .newests-and-groups .newests ul li a,
+body main aside .newests-and-groups .groups ul li a {
+  display: flex;
+  align-items: center;
+}
+body main aside .newests-and-groups .newests ul li a svg,
+body main aside .newests-and-groups .groups ul li a svg {
+  width: 12px;
+  height: 12px;
+}
+body main aside .newests-and-groups .newests ul li a svg path,
+body main aside .newests-and-groups .groups ul li a svg path {
+  stroke: #006699;
+}
+body main aside .newests-and-groups .newests ul li a span,
+body main aside .newests-and-groups .groups ul li a span {
+  font-size: 12px;
+  color: #006699;
+  margin-left: 4px;
+}
+body main aside .newests-and-groups .newests.groups ul li a span,
+body main aside .newests-and-groups .groups.groups ul li a span {
+  margin-left: 8px;
+}
+body main aside .add-event {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+}
+body main aside .add-event h3 {
+  color: #17272f;
+  font-size: 14px;
+  font-weight: 500;
+}
+body main aside .add-event a {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+}
+body main aside .find-more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  margin-bottom: 271px;
+}
+body main aside .find-more a {
+  font-size: 14px;
+  font-weight: 500;
+  color: #006699;
+}
+body main aside .add-feed,
+body main aside .ad {
+  padding: 20px 16px;
+}
+body main aside .add-feed .heading,
+body main aside .ad .heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #dedede;
+  margin-bottom: 16px;
+}
+body main aside .add-feed .heading h3,
+body main aside .ad .heading h3 {
+  font-size: 14px;
+  font-weight: 500;
+  color: #17272f;
+}
+body main aside .add-feed .heading .titles,
+body main aside .ad .heading .titles {
+  display: flex;
+  flex-direction: column;
+}
+body main aside .add-feed .heading .titles span,
+body main aside .ad .heading .titles span {
+  font-size: 10px;
+  color: #aaaaaa;
+  margin-top: 4px;
+}
+body main aside .add-feed .photos,
+body main aside .ad .photos {
+  margin: 16px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+body main aside .add-feed p,
+body main aside .ad p {
+  font-size: 14px;
+  color: #17272f;
+}
+body main aside .add-feed p span,
+body main aside .ad p span {
+  font-weight: 500;
+}
+body main aside .add-feed .pages ul li,
+body main aside .ad .pages ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body main aside .add-feed .pages ul li:not(:last-child),
+body main aside .ad .pages ul li:not(:last-child) {
+  margin-bottom: 16px;
+}
+body main aside .add-feed .pages ul li .page,
+body main aside .ad .pages ul li .page {
+  display: flex;
+}
+body main aside .add-feed .pages ul li .page .logo,
+body main aside .ad .pages ul li .page .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+body main aside .add-feed .pages ul li .page .company h3,
+body main aside .ad .pages ul li .page .company h3 {
+  font-size: 14px;
+  font-weight: 500;
+  color: #17272f;
+  margin-bottom: 3px;
+}
+body main aside .add-feed .pages ul li .page .company .fields,
+body main aside .ad .pages ul li .page .company .fields {
+  display: flex;
+  align-items: center;
+}
+body main aside .add-feed .pages ul li .page .company .fields span,
+body main aside .ad .pages ul li .page .company .fields span {
+  font-size: 12px;
+  color: #aaaaaa;
+  position: relative;
+  margin-right: 20px;
+}
+body main aside .add-feed .pages ul li .page .company .fields span:not(:only-child):last-child::before,
+body main aside .ad .pages ul li .page .company .fields span:not(:only-child):last-child::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -12px;
+  transform: translateY(-50%);
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: #c4c4c4;
+}
+body main aside .add-feed .pages ul li a,
+body main aside .ad .pages ul li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  border: 1px solid #006699;
+  border-radius: 4px;
+}
+body main aside .add-feed .pages ul li a img,
+body main aside .ad .pages ul li a img {
+  height: 12px;
+}
+body main aside .add-feed > a,
+body main aside .ad > a {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  color: #006699;
+  margin-top: 36px;
+  margin-bottom: -2px;
+}
+body main aside footer {
+  width: 270px;
+  margin-top: 54px;
+}
+body main aside footer .links {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  row-gap: 16px;
+  -moz-column-gap: 21px;
+       column-gap: 21px;
+  margin-bottom: 16px;
+}
+body main aside footer .links a {
+  font-size: 10px;
+  color: #aaaaaa;
+}
+body main aside footer .rights {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 12px;
+  border-top: 1px solid #dedede;
+}
+body main aside footer .rights span {
+  font-size: 10px;
+  color: #aaaaaa;
+}
+body main aside footer .rights img {
+  height: 12px;
 }/*# sourceMappingURL=style.css.map */
