@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: "Mulish", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: #1f2035;
+  padding: 16px;
+}
+body .component-1 {
+  width: 855px;
+  padding: 40px 50px;
+  border-radius: 10px;
+  color: #bbbbd7;
+  background: #1b1b30;
+}
+body .component-1 h4 {
+  font-size: 36px;
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+body .component-1 label {
+  display: block;
+  width: 100%;
+  padding: 24px 0;
+  border-radius: 5px;
+  border: 1px solid #454564;
+  background: #2a2a42 url(../img/search-icon.svg) no-repeat 25px center;
+}
+body .component-1 label input {
+  width: calc(100% - 100px);
+  font-size: 18px;
+  color: #bbbbd7;
+  background: transparent;
+  margin-left: 74px;
+}
+body .component-1 label input::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+body .component-1 label input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}/*# sourceMappingURL=style.css.map */
