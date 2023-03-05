@@ -12,8 +12,13 @@
     font-weight: 400;
     color: #fff;
   }
+  html,
   body {
-    padding: 57px 0;
+    width: 100%;
+    height: 100%;
+  }
+  body {
+    padding: 60px 0;
     background: #1a212a;
     overflow: hidden;
     position: relative;
@@ -47,6 +52,14 @@
   body header .avatar img {
     width: 41px;
     height: 41px;
+  }
+  body header .heading {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  body header .heading h1 {
+    font-size: 32px;
   }
   body nav {
     margin: 28px 0;
