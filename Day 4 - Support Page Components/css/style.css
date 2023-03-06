@@ -4,18 +4,21 @@
   padding: 0;
   outline: 0;
   border: 0;
+  list-style-type: none;
   box-sizing: border-box;
   font-family: "Mulish", sans-serif;
 }
 
-html,
-body {
-  height: 100%;
+a {
+  text-decoration: none;
 }
 
 body {
-  background: #1f2035;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
   padding: 16px;
+  background: #1f2035;
 }
 body .component-1 {
   width: 855px;
@@ -49,4 +52,52 @@ body .component-1 label input::-moz-placeholder {
 }
 body .component-1 label input::placeholder {
   color: rgba(255, 255, 255, 0.6);
+}
+body .component-2 {
+  width: 307px;
+  padding: 30px 30px 40px 30px;
+  border-radius: 10px;
+  color: #bbbbd7;
+  background: #1b1b30;
+}
+body .component-2 .popular-topics h5,
+body .component-2 .contact-support h5 {
+  font-size: 18px;
+}
+body .component-2 .popular-topics {
+  padding-bottom: 25px;
+  border-bottom: 2px solid #141428;
+  margin-bottom: 25px;
+}
+body .component-2 .popular-topics ul {
+  margin-top: 20px;
+}
+body .component-2 .popular-topics ul li:not(:last-child) {
+  margin-bottom: 8px;
+}
+body .component-2 .popular-topics ul li a {
+  font-size: 16px;
+  color: #786cd5;
+}
+body .component-2 .popular-topics ul li a:hover {
+  text-decoration: underline;
+}
+body .component-2 .contact-support p {
+  max-width: 226px;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 12px 0 20px;
+}
+body .component-2 .contact-support a {
+  display: inline-block;
+  padding: 18px 94px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  background: #786CD5;
+  transition: 100ms background-color;
+}
+body .component-2 .contact-support a:hover {
+  background: #6658cf;
 }/*# sourceMappingURL=style.css.map */
