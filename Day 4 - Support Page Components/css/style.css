@@ -95,9 +95,49 @@ body .component-2 .contact-support a {
   font-size: 16px;
   font-weight: 700;
   color: #fff;
-  background: #786CD5;
+  background: #786cd5;
   transition: 100ms background-color;
 }
 body .component-2 .contact-support a:hover {
   background: #6658cf;
+}
+body .component-3 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 735px;
+}
+body .component-3 .tip {
+  padding: 30px;
+  color: #bbbbd7;
+  background: #1b1b30;
+}
+body .component-3 .tip .heading {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+body .component-3 .tip .heading backgroundopacity h4 {
+  font-size: 18px;
+}
+body .component-3 .tip .heading span {
+  font-size: 16px;
+  padding: 8px 18px;
+  border-radius: 17.5px;
+}
+body .component-3 .tip .heading span.payment {
+  color: #ff7e9c;
+  background: rgba(252, 124, 154, 0.0496);
+}
+body .component-3 .tip .heading span.privacy {
+  color: #7EA1FF;
+  background: rgba(124, 152, 252, 0.0496);
+}
+body .component-3 .tip .heading span.api {
+  color: #FF7E7E;
+  background: rgba(252, 124, 124, 0.0496);
+}
+body .component-3 .tip p {
+  max-width: 543px;
+  font-size: 16px;
 }/*# sourceMappingURL=style.css.map */

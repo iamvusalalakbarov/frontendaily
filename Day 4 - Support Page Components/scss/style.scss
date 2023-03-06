@@ -110,12 +110,60 @@ body {
         font-size: 16px;
         font-weight: 700;
         color: #fff;
-        background: #786CD5;
+        background: #786cd5;
         transition: 100ms background-color;
 
         &:hover {
-          background: darken(#786CD5, 5);
+          background: darken(#786cd5, 5);
         }
+      }
+    }
+  }
+
+  .component-3 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 735px;
+
+    .tip {
+      padding: 30px;
+      color: #bbbbd7;
+      background: #1b1b30;
+
+      .heading {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 8px;
+        backgroundopacity h4 {
+          font-size: 18px;
+        }
+
+        span {
+          font-size: 16px;
+          padding: 8px 18px;
+          border-radius: 17.5px;
+
+          &.payment {
+            color: #ff7e9c;
+            background: rgba(#fc7c9a, 0.0496);
+          }
+
+          &.privacy {
+            color: #7EA1FF;
+            background: rgba(#7C98FC, 0.0496);
+          }
+
+          &.api {
+            color: #FF7E7E;
+            background: rgba(#FC7C7C, 0.0496);
+          }
+        }
+      }
+
+      p {
+        max-width: 543px;
+        font-size: 16px;
       }
     }
   }
