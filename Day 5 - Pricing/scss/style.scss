@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700;900&display=swap");
+
+$primary-color: #171922;
+$secondary-color: rgba($primary-color, 0.7139);
+$box-shadow: 0 15px 13px -12px rgba(#8693a4, 0.7396);
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: "Mulish", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ebeef2;
+
+  main {
+    display: flex;
+    flex-direction: column;
+
+    .heading {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 55px;
+
+      h1 {
+        font-size: 42px;
+        font-weight: 900;
+        color: $primary-color;
+      }
+
+      .filter {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2px;
+        padding: 5px;
+        border-radius: 25px;
+        background: #d4d9e0;
+
+        label {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          input {
+            display: none;
+
+            &:checked + span {
+              opacity: 1;
+              background: #fff;
+              box-shadow: $box-shadow;
+            }
+          }
+
+          span {
+            padding: 10px 26px;
+            border-radius: 25px;
+            font-size: 16px;
+            font-weight: 700;
+            color: $primary-color;
+            opacity: 0.7006;
+            transition: 300ms all;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    .plans {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 40px;
+
+      .plan {
+        height: 447px;
+        padding: 45px;
+        border-radius: 5px;
+        background: #fff;
+        position: relative;
+
+        h3 {
+          font-size: 28px;
+          font-weight: 700;
+          margin-bottom: 35px;
+          color: $primary-color;
+        }
+
+        .pricing {
+          display: flex;
+          flex-direction: column;
+          margin-bottom: 30px;
+
+          .price {
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: $primary-color;
+          }
+
+          .billed-freq {
+            font-size: 18px;
+            font-weight: 700;
+            color: $secondary-color;
+          }
+        }
+
+        p {
+          max-width: 348px;
+          font-size: 16px;
+          font-weight: 600;
+          line-height: 25px;
+          color: $secondary-color;
+        }
+
+        a {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: calc(100% - 90px);
+          padding: 20px 0;
+          border-radius: 5px;
+          border: 1px solid $primary-color;
+          font-size: 18px;
+          font-weight: 600;
+          text-decoration: none;
+          color: $primary-color;
+          transition: 300ms all;
+          position: absolute;
+          left: 50%;
+          bottom: 45px;
+          transform: translateX(-50%);
+
+          &:hover {
+            color: #fff;
+            background: $primary-color;
+          }
+        }
+      }
+    }
+  }
+}
