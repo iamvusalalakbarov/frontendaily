@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap");
+
+$primary-color: #242e4c;
+$pink: #f775c1;
+$border-color: #ebebf2;
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: "Mulish", sans-serif;
+  color: $primary-color;
+}
+
+a {
+  text-decoration: none;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f670b3;
+
+  .share-modal {
+    width: 808px;
+    padding: 55px 78px;
+    border-radius: 15px;
+    background: #fff;
+    position: relative;
+
+    h3 {
+      font-size: 22px;
+    }
+
+    .socials {
+      margin: 40px 0;
+
+      ul {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+        list-style-type: none;
+
+        li {
+          a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 82px;
+            height: 82px;
+            border-radius: 50%;
+            border: 1.34px solid $border-color;
+            transition: 100ms border-color;
+
+            &:hover {
+              border-color: $pink;
+            }
+
+            img {
+              height: 32px;
+            }
+          }
+        }
+      }
+    }
+
+    h6 {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    .link-box {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      border-radius: 5px;
+      border: 1px solid $border-color;
+
+      .link {
+        font-size: 16px;
+        margin-left: -5px;
+      }
+
+      button {
+        font-size: 14px;
+        font-weight: 700;
+        color: $pink;
+        background: #fff;
+        transition: 300ms color;
+        cursor: pointer;
+
+        &:hover {
+          color: darken($pink, 5);
+        }
+      }
+    }
+
+    a.close {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 12px;
+      border-radius: 50%;
+      background: #f7f7fc;
+      position: absolute;
+      top: 25px;
+      right: 25px;
+    }
+  }
+}

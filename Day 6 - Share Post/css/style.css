@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: "Mulish", sans-serif;
+  color: #242e4c;
+}
+
+a {
+  text-decoration: none;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f670b3;
+}
+body .share-modal {
+  width: 808px;
+  padding: 55px 78px;
+  border-radius: 15px;
+  background: #fff;
+  position: relative;
+}
+body .share-modal h3 {
+  font-size: 22px;
+}
+body .share-modal .socials {
+  margin: 40px 0;
+}
+body .share-modal .socials ul {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  list-style-type: none;
+}
+body .share-modal .socials ul li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 82px;
+  height: 82px;
+  border-radius: 50%;
+  border: 1.34px solid #ebebf2;
+  transition: 100ms border-color;
+}
+body .share-modal .socials ul li a:hover {
+  border-color: #f775c1;
+}
+body .share-modal .socials ul li a img {
+  height: 32px;
+}
+body .share-modal h6 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+body .share-modal .link-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-radius: 5px;
+  border: 1px solid #ebebf2;
+}
+body .share-modal .link-box .link {
+  font-size: 16px;
+  margin-left: -5px;
+}
+body .share-modal .link-box button {
+  font-size: 14px;
+  font-weight: 700;
+  color: #f775c1;
+  background: #fff;
+  transition: 300ms color;
+  cursor: pointer;
+}
+body .share-modal .link-box button:hover {
+  color: #f65db6;
+}
+body .share-modal a.close {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  border-radius: 50%;
+  background: #f7f7fc;
+  position: absolute;
+  top: 25px;
+  right: 25px;
+}/*# sourceMappingURL=style.css.map */
