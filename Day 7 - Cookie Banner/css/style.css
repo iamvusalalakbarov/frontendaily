@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: "Mulish", sans-serif;
+}
+
+body {
+  padding: 16px;
+  background: #f7f8fc;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+body .component-1 {
+  width: 410px;
+  padding: 35px 35px 25px;
+  border-radius: 5px;
+  color: #fff;
+  background: #10182f;
+}
+body .component-1 p {
+  max-width: 330px;
+  font-size: 16px;
+  line-height: 25px;
+  margin-bottom: 25px;
+}
+body .component-1 p a {
+  color: #fff;
+}
+body .component-1 .buttons {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  gap: 60px;
+}
+body .component-1 .buttons button {
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 100ms all;
+}
+body .component-1 .buttons button.decline {
+  color: #fff;
+  background: transparent;
+}
+body .component-1 .buttons button.decline:hover {
+  text-decoration: underline;
+}
+body .component-1 .buttons button.allow {
+  padding: 8px 20px;
+  border-radius: 5px;
+  color: #545d7a;
+  background: #fff;
+}
+body .component-1 .buttons button.allow:hover {
+  color: #fff;
+  background: #545d7a;
+}
+body .component-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 410px;
+  padding: 40px 0 35px;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0 15px 45px -12px rgba(0, 29, 147, 0.15);
+}
+body .component-2 p {
+  max-width: 330px;
+  font-size: 16px;
+  line-height: 25px;
+  text-align: center;
+  color: #10182f;
+  margin: 25px 0 35px;
+}
+body .component-2 p a {
+  color: #10182f;
+}
+body .component-2 button {
+  font-size: 16px;
+  font-weight: 700;
+  padding: 15px 35px;
+  border-radius: 5px;
+  color: #fff;
+  background: #10182f;
+  cursor: pointer;
+  transition: 100ms all;
+}
+body .component-2 button:hover {
+  background: #162242;
+}
+body .component-3 {
+  display: flex;
+  align-items: center;
+  width: 731px;
+  padding: 35px 35px 35px 45px;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0 15px 45px -12px rgba(0, 29, 147, 0.15);
+}
+body .component-3 p {
+  max-width: 330px;
+  font-size: 16px;
+  line-height: 25px;
+  color: #10182f;
+  margin: 0 120px 0 45px;
+}
+body .component-3 p a {
+  color: #10182f;
+}
+body .component-3 button {
+  font-size: 16px;
+  font-weight: 700;
+  padding: 15px 35px;
+  border-radius: 5px;
+  color: #fff;
+  background: #10182f;
+  cursor: pointer;
+  transition: 100ms all;
+}
+body .component-3 button:hover {
+  background: #162242;
+}
+body .component-4 {
+  width: 410px;
+  padding: 35px 35px 25px;
+  border-radius: 5px;
+  color: #10182f;
+  background: #fff;
+}
+body .component-4 p {
+  max-width: 330px;
+  font-size: 16px;
+  line-height: 25px;
+  margin-bottom: 25px;
+}
+body .component-4 p a {
+  color: #10182f;
+}
+body .component-4 .buttons {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  gap: 60px;
+}
+body .component-4 .buttons button {
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 100ms all;
+}
+body .component-4 .buttons button.decline {
+  color: #10182f;
+  background: transparent;
+}
+body .component-4 .buttons button.decline:hover {
+  text-decoration: underline;
+}
+body .component-4 .buttons button.allow {
+  padding: 8px 20px;
+  border-radius: 5px;
+  color: #fff;
+  background: #10182f;
+}
+body .component-4 .buttons button.allow:hover {
+  background: #162242;
+}
+body .component-5 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 410px;
+  padding: 40px 0 35px;
+  border-radius: 5px;
+  background: #10182f;
+  box-shadow: 0 15px 45px -12px rgba(0, 29, 147, 0.15);
+}
+body .component-5 svg path,
+body .component-5 svg circle {
+  fill: #fff;
+}
+body .component-5 p {
+  max-width: 330px;
+  font-size: 16px;
+  line-height: 25px;
+  text-align: center;
+  color: #fff;
+  margin: 25px 0 35px;
+}
+body .component-5 p a {
+  color: #fff;
+}
+body .component-5 button {
+  font-size: 16px;
+  font-weight: 700;
+  padding: 15px 35px;
+  border-radius: 5px;
+  color: #545d7a;
+  background: #fff;
+  cursor: pointer;
+  transition: 100ms all;
+}
+body .component-5 button:hover {
+  color: #fff;
+  background: #545d7a;
+}/*# sourceMappingURL=style.css.map */

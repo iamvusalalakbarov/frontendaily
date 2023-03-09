@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap");
+
+$primary-color: #10182f;
+$secondary-color: #545d7a;
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: "Mulish", sans-serif;
+}
+
+body {
+  padding: 16px;
+  background: #f7f8fc;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  .component-1 {
+    width: 410px;
+    padding: 35px 35px 25px;
+    border-radius: 5px;
+    color: #fff;
+    background: $primary-color;
+
+    p {
+      max-width: 330px;
+      font-size: 16px;
+      line-height: 25px;
+      margin-bottom: 25px;
+
+      a {
+        color: #fff;
+      }
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: right;
+      align-items: center;
+      gap: 60px;
+
+      button {
+        font-size: 14px;
+        font-weight: 700;
+        cursor: pointer;
+        transition: 100ms all;
+
+        &.decline {
+          color: #fff;
+          background: transparent;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+
+        &.allow {
+          padding: 8px 20px;
+          border-radius: 5px;
+          color: $secondary-color;
+          background: #fff;
+
+          &:hover {
+            color: #fff;
+            background: $secondary-color;
+          }
+        }
+      }
+    }
+  }
+
+  .component-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 410px;
+    padding: 40px 0 35px;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 0 15px 45px -12px rgba(#001d93, 0.15);
+
+    p {
+      max-width: 330px;
+      font-size: 16px;
+      line-height: 25px;
+      text-align: center;
+      color: $primary-color;
+      margin: 25px 0 35px;
+
+      a {
+        color: $primary-color;
+      }
+    }
+
+    button {
+      font-size: 16px;
+      font-weight: 700;
+      padding: 15px 35px;
+      border-radius: 5px;
+      color: #fff;
+      background: $primary-color;
+      cursor: pointer;
+      transition: 100ms all;
+
+      &:hover {
+        background: lighten($primary-color, 5);
+      }
+    }
+  }
+
+  .component-3 {
+    display: flex;
+    align-items: center;
+    width: 731px;
+    padding: 35px 35px 35px 45px;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 0 15px 45px -12px rgba(#001d93, 0.15);
+
+    p {
+      max-width: 330px;
+      font-size: 16px;
+      line-height: 25px;
+      color: $primary-color;
+      margin: 0 120px 0 45px;
+
+      a {
+        color: $primary-color;
+      }
+    }
+
+    button {
+      font-size: 16px;
+      font-weight: 700;
+      padding: 15px 35px;
+      border-radius: 5px;
+      color: #fff;
+      background: $primary-color;
+      cursor: pointer;
+      transition: 100ms all;
+
+      &:hover {
+        background: lighten($primary-color, 5);
+      }
+    }
+  }
+
+  .component-4 {
+    width: 410px;
+    padding: 35px 35px 25px;
+    border-radius: 5px;
+    color: $primary-color;
+    background: #fff;
+
+    p {
+      max-width: 330px;
+      font-size: 16px;
+      line-height: 25px;
+      margin-bottom: 25px;
+
+      a {
+        color: $primary-color;
+      }
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: right;
+      align-items: center;
+      gap: 60px;
+
+      button {
+        font-size: 14px;
+        font-weight: 700;
+        cursor: pointer;
+        transition: 100ms all;
+
+        &.decline {
+          color: $primary-color;
+          background: transparent;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+
+        &.allow {
+          padding: 8px 20px;
+          border-radius: 5px;
+          color: #fff;
+          background: $primary-color;
+
+          &:hover {
+            background: lighten($primary-color, 5);
+          }
+        }
+      }
+    }
+  }
+
+  .component-5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 410px;
+    padding: 40px 0 35px;
+    border-radius: 5px;
+    background: $primary-color;
+    box-shadow: 0 15px 45px -12px rgba(#001d93, 0.15);
+
+    svg {
+      path,
+      circle {
+        fill: #fff;
+      }
+    }
+
+    p {
+      max-width: 330px;
+      font-size: 16px;
+      line-height: 25px;
+      text-align: center;
+      color: #fff;
+      margin: 25px 0 35px;
+
+      a {
+        color: #fff;
+      }
+    }
+
+    button {
+      font-size: 16px;
+      font-weight: 700;
+      padding: 15px 35px;
+      border-radius: 5px;
+      color: $secondary-color;
+      background: #fff;
+      cursor: pointer;
+      transition: 100ms all;
+
+      &:hover {
+        color: #fff;
+        background: $secondary-color;
+      }
+    }
+  }
+}
