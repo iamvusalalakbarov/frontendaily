@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Page Components</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <button class="see-all-jobs">
+      <span>See all jobs</span>
+      <img src="./img/arrow-icon.svg" alt="Arrow Icon" />
+    </button>
+
+    <div class="job">
+      <div class="job-title">
+        <h3>Product Designer (UI/UX)</h3>
+        <span>Product Designer (UI/UX)</span>
+      </div>
+
+      <p>
+        We are looking for a ui/ux web designer to redesign our website which is
+        a subscription snack box company.
+      </p>
+
+      <div class="tags">
+        <span>UI Design</span>
+        <span>UX Design</span>
+        <span>Prototyping</span>
+      </div>
+    </div>
+
+    <form>
+      <div class="search-box">
+        <label>
+          <img src="./img/search-icon.svg" alt="Search Icon" />
+          <input type="text" placeholder="Search by keyword" />
+        </label>
+      </div>
+
+      <div class="filter-box">
+        <h4 class="job-types">Job types</h4>
+
+        <ul>
+          <li>
+            <label>
+              <input type="checkbox" />
+              <span class="check-box"></span>
+              <span class="job-type">All</span>
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" />
+              <span class="check-box"></span>
+              <span class="job-type">Full Time</span>
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" checked />
+              <span class="check-box"></span>
+              <span class="job-type">Freelance</span>
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" />
+              <span class="check-box"></span>
+              <span class="job-type">Internship</span>
+            </label>
+          </li>
+        </ul>
+
+        <h4 class="location">Location</h4>
+
+        <label>
+          <h6>Country/Region</h6>
+
+          <select>
+            <option>Norway</option>
+            <option>Azerbaijan</option>
+          </select>
+        </label>
+
+        <label>
+          <h6>City</h6>
+
+          <select>
+            <option>Oslo</option>
+            <option>Baku</option>
+          </select>
+        </label>
+
+        <button type="submit">Apply</button>
+      </div>
+    </form>
+
+    <div class="workers">
+      <div class="worker">
+        <div class="worker-avatar"></div>
+
+        <div class="worker-info">
+          <h2>Root</h2>
+          <span class="worker-job-title">Lead Designer</span>
+        </div>
+
+        <div class="worker-location">
+          <img src="./img/location-icon.svg" alt="Location Icon" />
+          <span>Anywhere</span>
+        </div>
+      </div>
+
+      <div class="worker">
+        <div class="worker-avatar"></div>
+
+        <div class="worker-info">
+          <h2>Klarna</h2>
+          <span class="worker-job-title">Brand Designer</span>
+        </div>
+
+        <div class="worker-location">
+          <img src="./img/location-icon.svg" alt="Location Icon" />
+          <span>Austin, TX</span>
+        </div>
+      </div>
+
+      <div class="worker">
+        <div class="worker-avatar"></div>
+
+        <div class="worker-info">
+          <h2>Boulevard</h2>
+          <span class="worker-job-title">Senior Experience Designer</span>
+        </div>
+
+        <div class="worker-location">
+          <img src="./img/location-icon.svg" alt="Location Icon" />
+          <span>Anywhere</span>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
