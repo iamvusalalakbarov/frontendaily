@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  padding: 16px;
+  background: #eef0f7;
+}
+body main {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+body main .component-1 {
+  width: 1360px;
+  padding: 65px;
+  background: #fff;
+}
+body main .component-1 h3 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #1a2250;
+  margin-bottom: 60px;
+}
+body main .component-1 ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body main .component-1 ul li a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  width: 338px;
+  text-decoration: none;
+  position: relative;
+  z-index: 1;
+}
+body main .component-1 ul li a::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  border-radius: 12px;
+  background: #f6f8ff;
+  opacity: 0;
+  transition: 200ms opacity;
+}
+body main .component-1 ul li a span {
+  width: 4px;
+  height: 77px;
+  border-radius: 2px;
+  background: linear-gradient(to bottom, #8bcdff, #6888f3);
+}
+body main .component-1 ul li a p {
+  width: 260px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 32px;
+  color: #5f85ff;
+  transition: 200ms color;
+}
+body main .component-1 ul li a svg path {
+  transition: 200ms stroke;
+}
+body main .component-1 ul li a:hover::before {
+  opacity: 1;
+}
+body main .component-1 ul li a:hover p {
+  color: #1a2250;
+}
+body main .component-1 ul li a:hover svg path {
+  stroke: #1a2250;
+}/*# sourceMappingURL=style.css.map */
